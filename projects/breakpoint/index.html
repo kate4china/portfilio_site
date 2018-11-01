@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Breakporint Font Type Design by Kate von Houck</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link href='../../style.css' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      overflow-x: hidden;
+      background-color: white;
+    }
+
+    #page-header .menu a {
+      font-size: 18px;
+    }
+
+    #page-header {
+      background-color: white;
+      position: relative;
+    }
+
+    #page {
+      max-width: 100%;
+    }
+
+    .type-design {
+      width: 100%;
+    }
+
+    .type-header {
+      padding-top: 60px;
+      overflow: hidden;
+      height: 520px;
+      background: url("img/bg-fade.jpg");
+      background-position: top, center;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .type-header img {
+      max-width: 100%;
+    }
+
+    #slideshow {
+      position: relative;
+      width: 800px;
+      height: 600px;
+      margin: 40px auto;
+    }
+
+    #slideshow .slide {
+      position: absolute;
+    }
+
+    #slideshow .left {
+      position: absolute;
+      top: 260px;
+      left: -100px;
+      background-color: red;
+      width: 80px;
+      height: 80px;
+      background: url(img/leftArrow.png);
+    }
+
+    #slideshow .right {
+      position: absolute;
+      top: 260px;
+      right: -100px;
+      background-color: red;
+      width: 80px;
+      height: 80px;
+      background: url(img/rightArrow.png);
+    }
+
+
+    .flipper {
+      position: relative;
+      width: 900px;
+      max-width: 100%;
+      height: 700px;
+      margin: 80px auto;
+    }
+
+    .h900 {
+      height: 900px;
+    }
+
+    .flipper .slide {
+      position: absolute;
+      width: 100%;
+    }
+
+    .flipper .flipp {
+      position: absolute;
+      top: 50%;
+      transform: translate(0px, -40px) rotate(0deg);
+      right: -40px;
+      background: url(img/rightArrow.png);
+      width: 80px;
+      height: 80px; //transition: transform .25s;
+    }
+
+    .flipper .flipp.flipped {
+      transform: translate(0px, -40px) rotate(-180deg);
+    }
+
+
+    .center {
+      display: block;
+      width: 900px;
+      margin: 80px auto;
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      #slideshow {
+        width: 300px;
+        height: 200px;
+      }
+      #slideshow .slide {
+        width: 300px;
+      }
+    }
+  </style>
+  <script>
+    $(function() {
+      var currentSlide = 1;
+      $(".left").click(function(e) {
+        var lastSlide = currentSlide
+        currentSlide -= 1
+        if (currentSlide < 1) currentSlide = 8
+        $("#slideshow .slide." + lastSlide).css({
+          "left": "0px",
+          "opacity": 1
+        }).animate({
+          "left": "800px",
+          "opacity": 0
+        }, 1000)
+        $("#slideshow .slide." + currentSlide).css({
+          "left": "-800px",
+          "opacity": 0
+        }).animate({
+          "left": "0px",
+          "opacity": 1
+        }, 1000)
+        console.log(lastSlide, currentSlide)
+      })
+      $(".right").click(function(e) {
+        var lastSlide = currentSlide
+        currentSlide += 1
+        if (currentSlide > 8) currentSlide = 1
+        $("#slideshow .slide." + lastSlide).css({
+          "left": "0px",
+          "opacity": 1
+        }).animate({
+          "left": "-800px",
+          "opacity": 0
+        }, 1000)
+        $("#slideshow .slide." + currentSlide).css({
+          "left": "800px",
+          "opacity": 0
+        }).animate({
+          "left": "0px",
+          "opacity": 1
+        }, 1000)
+      })
+      $("#slideshow .slide").css({
+        "opacity": 0
+      })
+      $("#slideshow .slide." + currentSlide).css({
+        "opacity": 1
+      })
+
+
+      $(".flipp").click(function(e) {
+        $flipper = $(this)
+        $parent = $(this).parent()
+        if ($flipper.hasClass("flipped")) {
+          $flipper.removeClass("flipped")
+          $parent.find(".slide.2").animate({
+            "opacity": 0
+          }, 10)
+          $parent.find(".slide.1").animate({
+            "opacity": 1
+          }, 10)
+          //$parent.find(".slide.2").css({"left":"0px", "opacity": 1}).animate({"left":"900px", "opacity": 0}, 1000)
+          //$parent.find(".slide.1").css({"left":"-900px", "opacity": 0}).animate({"left":"0px", "opacity": 1}, 1000)
+        } else {
+          $flipper.addClass("flipped")
+          $parent.find(".slide.1").animate({
+            "opacity": 0
+          }, 10)
+          $parent.find(".slide.2").animate({
+            "opacity": 1
+          }, 10)
+          //$parent.find(".slide.1").css({"left":"0px", "opacity": 1}).animate({"left":"-900px", "opacity": 0}, 1000)
+          //$parent.find(".slide.2").css({"left":"900px", "opacity": 0}).animate({"left":"0px", "opacity": 1}, 1000)
+        }
+      })
+      $(".flipper .1").css({
+        "opacity": 1
+      })
+      $(".flipper .2").css({
+        "opacity": 0
+      })
+
+    })
+  </script>
+</head>
+
+<body>
+  <header class="page">
+    <nav>
+      <a href="../../index.html#projects">PROJECTS</a>
+      <span class="red">/</span>
+      <a href="../../index.html#contact">CONTACT</a>
+    </nav>
+    <a href="../../index.html">
+      <img src="../../image/logomini.png" with="46" height="46">
+    </a>
+  </header>
+  <header class="area">
+  </header>
+
+  <div id="page" class="type-design">
+    <div class="type-header">
+      <img src="img/breakpoint-06.png" width=581>
+    </div>
+
+    <a name="glyphs"></a>
+    <div id="slideshow">
+      <img class="1 slide" src="img/description5-09.png" width=800>
+      <img class="2 slide" src="img/englspec8-01.png" width=800>
+      <img class="3 slide" src="img/russpes9-04.png" width=800>
+      <img class="4 slide" src="img/ligatures-03.png" width=800>
+      <img class="5 slide" src="img/aespec2-02.png" width=800>
+      <img class="6 slide" src="img/rusengl-02.png" width=800>
+      <img class="7 slide" src="img/numbers3-10.png" width=800>
+      <img class="8 slide" src="img/yllowgr3-07.png" width=800>
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+
+    <a name="designs"></a>
+
+    <div class="flipper" style="height:648px">
+      <img class="1 slide" src="img/a-vodka-en-900.png" width=900>
+      <img class="2 slide" src="img/a-vodka-ru-900.png" width=900>
+      <div class="flipp"></div>
+    </div>
+
+    <div class="flipper">
+      <img class="1 slide" src="img/bookengl2.png" width=900>
+      <img class="2 slide" src="img/bookrus.png" width=900>
+      <div class="flipp"></div>
+    </div>
+
+    <div class="flipper h900">
+      <img class="1 slide" src="img/newtshirt2-01.png" width=900>
+      <img class="2 slide" src="img/newtshirtrus2-02.png" width=900>
+      <div class="flipp"></div>
+    </div>
+
+    <div class="flipper" style="height:1200px">
+      <img class="1 slide" src="img/newposterlive.png" width=900>
+      <img class="2 slide" src="img/rusposterlive4.png" width=900>
+      <div class="flipp"></div>
+    </div>
+
+    <img class="center" src="img/billboard2-01.png" width=900>
+    <img class="center" src="img/billboardlive4.png" width=900>
+
+    <div class="flipper" style="height:604px">
+      <img class="1 slide" src="img/englzara.png" width=900>
+      <img class="2 slide" src="img/ruszara.png" width=900>
+      <div class="flipp"></div>
+    </div>
+    <img class="center" src="img/store front.png" width=900>
+
+    <a name="process"></a>
+    <img class="center" src="img/inspiration2-05.png" width=900>
+    <img class="center" src="img/stencils.jpg" width=900 style="margin:80px auto !important">
+    <img class="center" src="img/Moon-free-fonts-for-designers.jpg" width=900>
+    <img class="center" src="img/kerning-12.png" width=900>
+    <img class="center" src="img/fontlab5.png" width=900 style="margin:-47px auto !important">
+
+    <img class="center" src="img/thanks-08-08-08.png" width=900 style="42px auto 10px auto !important">
+
+  </div>
+
+  <footer>
+    <a class="leftArrow" href="../bubbleat/index.html">
+      <img src="../../image/arrowLeft.png" width=29 height=54> Bubbleats
+    </a>
+    <a class="rightArrow" href="../blueprint/index.html">
+      <img src="../../image/arrowRight.png" width=29 height=54> Blueprint
+    </a>
+    KATE VON HOUCK
+    <div class="copy">
+      COPYRIGHT &copy; 2017
+    </div>
+  </footer>
+
+</body>
+
+</html>

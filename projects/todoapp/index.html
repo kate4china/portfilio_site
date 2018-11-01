@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo App UX/UI Design by Kate von Houck</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width">
+  <link href='../../style.css' rel='stylesheet' type='text/css'>
+  <style>
+    @media screen and (max-width: 400px) {
+      #headerimage {
+        height: 300px !important;
+      }
+      #overlayer {
+        margin-top: 370px !important;
+      }
+      #video iframe {
+        max-width: 90% !important;
+      }
+      .video-card {
+        margin: 60px 0px !important;
+      }
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: white;
+      line-height: 28px;
+    }
+
+    #headerimage {
+      position: fixed;
+      top: 76px;
+      z-index: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      background: linear-gradient(to bottom, #FFFFFF 0%, #93EEE8 100%);
+      height: 632px;
+    }
+
+    #headerimage img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #overlayer {
+      padding-top: 1px;
+      margin-top: 700px;
+      position: relative;
+      background-color: white;
+      z-index: 1;
+    }
+
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 80%;
+      height: auto;
+    }
+
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 38px;
+      font-size: 28px;
+      font-weight: normal;
+      text-align: center;
+      color: #60A8B8;
+    }
+
+    p {
+      padding: 0px 20px;
+      max-width: 600px;
+      margin: 0px auto;
+    }
+
+    .section {
+      width: 100%;
+      margin: 0px auto;
+    }
+
+    .ribbon {
+      padding: 20px 0px;
+      color: white;
+      text-align: center;
+      background-color: #60A8B8;
+    }
+
+    .colors {
+      background-color: #333333;
+      padding: 20px 0px;
+      overflow: hidden;
+    }
+
+    .video-frame {
+      background-image: url(img/frame.png);
+      background-size: 100%;
+      padding: 61px 17px;
+      margin-top: 20px;
+    }
+
+    .video-card {
+      display: inline-block;
+      margin: 60px 60px;
+      width: 232px;
+      height: 483px;
+    }
+
+    #video {
+      background: black;
+      padding: 50px 0px;
+    }
+
+    #video iframe {
+      display: block;
+      margin: 0px auto;
+      max-width: 640px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="page">
+    <nav>
+      <a href="../../index.html#projects">PROJECTS</a>
+      <span class="red">/</span>
+      <a href="../../index.html#contact">CONTACT</a>
+    </nav>
+    <a href="../../index.html">
+      <img src="../../image/logomini.png" with="46" height="46">
+    </a>
+  </header>
+  <header class="area">
+  </header>
+
+  <div id="headerimage">
+    <img src="../../image/todoapp.png" width="1200" height="600">
+  </div>
+
+  <div id="overlayer">
+
+    <div class="section">
+      <h1>TODO APP</h1>
+      <p>
+        ToDo is an App for business people that helps them to manage their time and their tasks. In this app users can see their weekly progress, as well as create their tasks in their calendar. When the users are done with the tasks they can check them done
+        and then delete it. Users can see the percentages of progress done to help motivate them finish their tasks.
+      </p>
+    </div>
+
+    <div style="text-align: center; background-color: #F9F7F7; margin-top: 100px">
+      <div class="video-card">
+        Loading Animation
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+          <source src="video/1.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+      <div class="video-card">
+        Calendar Switching
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+          <source src="video/2.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; background-color: #F9F7F7; padding-bottom: 100px">
+      <div class="video-card">
+        Progress Percentage
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+          <source src="video/3.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+      <div class="video-card">
+        Deleting Tasks
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+          <source src="video/4.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="colors">
+      <img src="img/colors.png" width="696" height="294" style="margin: 80px auto 120px auto">
+    </div>
+    <div class="ribbon">
+      New Product Design - UX / UI Design <br> Platform: iPhone / Mobile <br> Date: 2016
+    </div>
+
+    <div class="section">
+      <h1>PROBLEM</h1>
+      <p>
+        Many business people experience difficulties managing their time and staying motivated to finish their tasks. Also, they might forget what they have done already and it is hard for them to recognize how many tasks left in order to finish.
+      </p>
+    </div>
+
+    <div class="section">
+      <h1>SOLUTION</h1>
+      <p>
+        Todo app will help business people to see their weekly progress, to put everything into the calendar and get notifications. Also, they can easily check done tasks and see their progress for the day. Also, they can delete their done tasks and add new ones.
+        Todo App helps to manage time for business people and view their progress.
+      </p>
+    </div>
+
+    <div class="section" style="margin-bottom:100px;">
+      <h1>HOW TO USE</h1>
+      <img src="img/howToUse.png" width="765" height="160">
+    </div>
+
+    <div id="video" style="margin-bottom:100px;">
+      <iframe src="https://player.vimeo.com/video/193482687" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+      <h1>TARTGET MARKET</h1>
+      <p>
+        ToDo app is mostly created for business people (25-45 years old) who have their own businesses or who are working at business companies. And who are interested see their weekly progress and to be able to see how many tasks are left.
+      </p>
+
+      <h1>WIREFRAMES</h1>
+      <img src="img/wireframes.png" width="1100" height="1360" style="margin: 60px auto 120px auto">
+    </div>
+
+    <h1>ARCHITECTURE</h1>
+
+    <img src="img/architecture.png" width="196" height="658" style="margin: 60px auto 120px auto">
+
+    <a class="toggle-button" href="mailto:kate4chian@gmail.com">
+      <div class="inner">
+        CONTACT ME<br> VIA EMAIL
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    <a class="leftArrow" href="../steamspy/index.html">
+      <img src="../../image/arrowLeft.png" width=29 height=54> Steam Spy
+    </a>
+    <a class="rightArrow" href="../prodance/index.html">
+      <img src="../../image/arrowRight.png" width=29 height=54> ProDance
+    </a>
+    KATE VON HOUCK
+    <div class="copy">
+      COPYRIGHT &copy; 2017
+    </div>
+  </footer>
+</body>
+
+</html>

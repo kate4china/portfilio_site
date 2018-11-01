@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Steam Spy UX/UI Redesign by Kate von Houck</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width">
+  <link href='../../style.css' rel='stylesheet' type='text/css'>
+  <style>
+    @media screen and (max-width: 400px) {
+      #headerimage {
+        height: 300px !important;
+      }
+      #overlayer {
+        margin-top: 370px !important;
+      }
+      #video iframe {
+        max-width: 90% !important;
+      }
+      .video-card {
+        margin: 60px 0px !important;
+      }
+
+      video {
+        width: 90% !important;
+        height: auto;
+      }
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: white;
+      line-height: 28px;
+    }
+
+    #headerimage {
+      position: fixed;
+      top: 76px;
+      z-index: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      background: linear-gradient(to bottom, #FFFFFF 0%, #ECECEC 100%);
+      height: 632px;
+    }
+
+    #headerimage img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #overlayer {
+      padding-top: 1px;
+      margin-top: 700px;
+      position: relative;
+      background-color: white;
+      z-index: 1;
+    }
+
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 80%;
+      height: auto;
+    }
+
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 38px;
+      font-size: 28px;
+      font-weight: normal;
+      text-align: center;
+      color: #030303;
+    }
+
+    p {
+      padding: 0px 20px;
+      max-width: 600px;
+      margin: 0px auto;
+    }
+
+    .ribbon {
+      padding: 20px 0px;
+      color: white;
+      text-align: center;
+      background-color: #36474f;
+    }
+
+    .colors {
+      background-color: black;
+      padding: 20px 0px;
+      overflow: hidden;
+    }
+
+    .video-frame {
+      background-image: url(img/frame.png);
+      background-size: 100%;
+      padding: 61px 17px;
+    }
+
+    .video-card {
+      display: inline-block;
+      margin: 60px 60px;
+      width: 260px;
+      height: 480px;
+    }
+
+    #video {
+      background: black;
+      padding: 50px 0px;
+    }
+
+    #video iframe {
+      display: block;
+      margin: 0px auto;
+      max-width: 640px;
+    }
+
+    video {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    }
+
+    .redesign {
+      margin-bottom: 60px;
+      margin-top: 30px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="page">
+    <nav>
+      <a href="../../index.html#projects">PROJECTS</a>
+      <span class="red">/</span>
+      <a href="../../index.html#contact">CONTACT</a>
+    </nav>
+    <a href="../../index.html">
+      <img src="../../image/logomini.png" with="46" height="46">
+    </a>
+  </header>
+
+  <div id="headerimage">
+    <img src="../../image/steamspy.png" width="1200" height="600">
+  </div>
+
+  <div id="overlayer">
+
+    <h1>Steam Spy</h1>
+    <p>
+      <a href="https://steamspy.com/">Steamspy.com</a> is a website that shows how many people own or play a particular game. It has stats on total playtime, total owners, youtube viewers and twitch streamers. Steam Spy can be used by regular players to
+      find a recently released popular games. This site is also very useful for game developers, because they can estimate how much money a game has made as well as find out how popular a particular genre is. They can also use this site to compare games
+      against each other.
+    </p>
+
+    <h1>GOALS</h1>
+    <p>
+     I&apos;m going to redesign the Steam Spy website by using google material design. And I want to simplify navigation system and improve game filters.
+    </p>
+
+    <div style="text-align: center">
+      <div class="video-card">
+        Loading Animation
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+            <source src="video/1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-card">
+        Calendar Switching
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+            <source src="video/2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <div class="video-card">
+        Progress Percentage
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+            <source src="video/3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="video-card">
+        Deleting Tasks
+        <div class="video-frame">
+          <video width="200" height="355" autoplay loop>
+            <source src="video/4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h1>WEB</h1>
+    <p>Steam Spy has a huge library of games. Its the full steam catalog 8000 games.</p>
+
+    <video width="640" height="400" autoplay loop style="margin: 20px auto 120px; display:block;">
+      <source src="video/web1.mp4" type="video/mp4">
+    </video>
+
+    <p>Many filters and sorts help users to find exactly what they are looking for.</p>
+
+    <video width="640" height="400" autoplay loop style="margin: 20px auto 120px; display:block;">
+      <source src="video/web2.mp4" type="video/mp4">
+    </video>
+
+
+    <h1>REDESIGN THOUGHTS</h1>
+
+    <p>
+      In the original site the filters are hard to understand. You couldn’t filter by a year range, total players or total sales. I replaced this with filter where you can drag both start and end of the range.
+    </p>
+    <img class="redesign" src='img/redesign1.png' width=800 height=400>
+
+    <p>
+      Many game developers use Steam Spy to guess at the money the game has made. The formula is pretty simple number of owners * the price of the game. Steam takes about 30% and game developers keep 70%. This is pretty important use of the site. But this is totally lacking on Steam Spy itself. In my redesign I put the estimated game earnings front and center, enabling people to view it and search for it in filters.
+    </p>
+    <img class="redesign" src='img/redesign2.png' width=800 height=400>
+
+    <p>
+      Default view for steam spy is a list of games. I think that it works only for game developers, but not for players. Because players would like to see beautiful posters of the game and bigger pictures. That’s why I created the gallery and the list views for users to pick which one they prefer.
+    </p>
+    <img class="redesign" src='img/redesign3.png' width=800 height=400>
+
+    <h1>CURRENT STEAM SPY DESIGN</h1>
+    <img src="img/steamspyreal.png" width="713" height="815" style="margin: 70px auto 120px auto">
+
+    <div class="colors">
+      <img src="img/colors.png" width="591" height="375" style="margin: 80px auto 120px auto">
+    </div>
+    <div class="ribbon">
+      Product Redesign - UX / UI Design <br> Web and Mobile<br> Date: 2017
+    </div>
+
+    <h1>PERSONAS / USECASES</h1>
+    <img src="img/personas.png" width="760" height="404">
+
+    <h1>USERFLOW</h1>
+    <img src="img/userflow.png" width="817" height="467" style="margin: 40px auto 120px auto">
+
+    <h1>WIREFRAMES</h1>
+    <img src="img/wireframes.png" width="600" height="1900" style="margin: 40px auto 120px auto">
+
+    <a class="toggle-button" href="mailto:kate4chian@gmail.com">
+      <div class="inner">
+        CONTACT ME<br> VIA EMAIL
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    <a class="leftArrow" href="../grouchy/index.html">
+      <img src="../../image/arrowLeft.png" width=29 height=54> Grouchy
+    </a>
+    <a class="rightArrow" href="../todoapp/index.html">
+      <img src="../../image/arrowRight.png" width=29 height=54> Todo App
+    </a>
+    KATE VON HOUCK
+    <div class="copy">
+      COPYRIGHT &copy; 2017
+    </div>
+  </footer>
+</body>
+
+</html>

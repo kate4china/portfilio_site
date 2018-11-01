@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Grouhcy App UX/UI Design by Kate von Houck</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width">
+  <link href='../../style.css' rel='stylesheet' type='text/css'>
+  <style>
+    @media screen and (max-width: 500px) {
+      #headerimage {
+        height: 300px !important;
+      }
+      #overlayer {
+        margin-top: 370px !important;
+      }
+      #video iframe {
+        max-width: 90% !important;
+      }
+      .video-card {
+        margin: 60px 0px !important;
+      }
+
+      .web-frame video {
+        max-width: 90% !important;
+        height: auto !important;
+      }
+
+      .ipad-frame {
+        transform: scale(.7, .7) translate(-15%, 0);
+      }
+      .ipad-frame img {
+        height: auto !important;
+      }
+      .ipad-frame video {
+        height: auto !important;
+      }
+
+      video {
+        max-width: 90% !important;
+        height: auto !important;
+      }
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: white;
+      line-height: 28px;
+    }
+
+    #headerimage {
+      position: fixed;
+      top: 76px;
+      z-index: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      background: linear-gradient(to bottom, #FFFFFF 0%, #F3C8FF 100%);
+      height: 632px;
+    }
+
+    #headerimage img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #overlayer {
+      padding-top: 1px;
+      margin-top: 700px;
+      position: relative;
+      background-color: white;
+      z-index: 1;
+    }
+
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 80%;
+      height: auto;
+    }
+
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 38px;
+      font-size: 28px;
+      font-weight: normal;
+      text-align: center;
+      color: #7C024B;
+    }
+
+    p {
+      padding: 0px 20px;
+      max-width: 600px;
+      margin: 0px auto;
+    }
+
+    .section {
+      width: 100%;
+      margin: 0px auto;
+    }
+
+    .ribbon {
+      padding: 20px 0px;
+      color: white;
+      text-align: center;
+      background-color: #7C024B;
+    }
+
+    .colors {
+      background-color: #333333;
+      padding: 20px 0px;
+      overflow: hidden;
+    }
+
+    .video-frame {
+      padding: 61px 17px;
+      /* margin-top: 20px; */
+    }
+
+    .video-frame video {
+      display: block;
+      margin: 0px auto;
+    }
+
+    .web-frame {
+      padding: 0px 0px;
+      margin: 30px 0px 60px 0px;
+    }
+    .web-frame {
+      text-align: center;
+    }
+    .web-frame video {
+      display: block;
+      margin: 10px auto;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    }
+
+
+    .ipad-card {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .ipad-frame {
+      margin: 10px auto;
+      width: 504px;
+      height: 360px;
+      text-align: center;
+      background-image: url(img/frame.png);
+      padding-top: 30px;
+      background-size: 100%;
+    }
+    .ipad-frame img {
+      width: 400px;
+      height: 300px;
+    }
+
+    .iphone-card {
+      display: inline-block;
+      margin: 60px 60px 60px 60px;
+      text-align: center;
+    }
+    .iphone-frame {
+      margin: 10px auto;
+      width: 246px;
+      height: 480px;
+      text-align: center;
+      background-image: url(img/iphoneFrame.png);
+      padding-top: 74px;
+      background-size: 100%;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <header class="page">
+    <nav>
+      <a href="../../index.html#projects">PROJECTS</a>
+      <span class="red">/</span>
+      <a href="../../index.html#contact">CONTACT</a>
+    </nav>
+    <a href="../../index.html">
+      <img src="../../image/logomini.png" with="46" height="46">
+    </a>
+  </header>
+
+  <div id="headerimage">
+    <img src="../../image/grouchy.png" width="1200" height="600">
+  </div>
+
+
+  <div id="overlayer">
+
+
+    <h1>GROUCHY</h1>
+    <p>This is a real-time analyzing system of chat system for game developers who wants to avoid toxic behavior of players. Grouchy enables you to automatically detect and react to toxic player behavior. Harassment and other bad behavior drives players
+      away. Grouchy helps by giving you the tools you need to manage and moderate your community.</p>
+
+
+    <h1>WEB</h1>
+    <div class="web-frame">
+      <p>Rich landing page that explains what Grauchy is.</p>
+      <video width="500" height="350" autoplay loop>
+        <source src="video/web1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="web-frame">
+      <p>Real time player chat and actions.</p>
+      <video width="500" height="350" autoplay loop>
+        <source src="video/web2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="web-frame">
+      <p>Player banning.</p>
+      <video width="500" height="350" autoplay loop>
+        <source src="video/web3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <h1>iPad</h1>
+
+    <div class="ipad-card">
+      <p>Customizable ban message for players.</p>
+      <div class="ipad-frame">
+        <video width="400" height="300" autoplay loop>
+          <source src="video/ipadban.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="ipad-card">
+      <p>Main admin chat and event view.</p>
+      <div class="ipad-frame">
+        <img src="img/ipad1.png" width=1000 height=768>
+      </div>
+    </div>
+
+    <div class="ipad-card">
+      <p>Ban screen.</p>
+      <div class="ipad-frame">
+        <img src="img/ipad2.png" width=1000 height=768>
+      </div>
+    </div>
+
+    <div class="ipad-card">
+      <p>Ban screen moves up when typing.</p>
+      <div class="ipad-frame">
+        <img src="img/ipad3.png" width=1000 height=768>
+      </div>
+    </div>
+
+    <h1>iPhone</h1>
+
+    <div style="text-align: center;">
+      <div class="iphone-card">
+        <p>Filters and Channels</p>
+        <div class="iphone-frame">
+          <img src="img/iphone1.png" width=186>
+        </div>
+      </div>
+      <div class="iphone-card">
+        <p>Chats and Events</p>
+        <div class="iphone-frame">
+          <img src="img/iphone2.png" width=186>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 20px">
+      <div class="iphone-card">
+        <p>Banning Screen</p>
+        <div class="iphone-frame">
+          <img src="img/iphone3.png" width=186>
+        </div>
+      </div>
+      <div class="iphone-card">
+        <p>Ban Message</p>
+        <div class="iphone-frame">
+          <img src="img/iphone4.png" width=186>
+        </div>
+      </div>
+    </div>
+
+    <h1>PROBLEM</h1>
+    <p>Harassment, trolling, griefing, verbal abuse and other bad behavior drives players away, decreasing sales.</p>
+
+    <h1>WHAT IS TOXIC BEHAVIOR?</h1>
+    <p>
+      A ton of toxic behavior is about chat and what is said to other players. This includes stuff like racial slurs, calling people names, cussing at people. This can also be directed in no one in particular, but just repeating the same message in chat to annoy anyone who happens to be there. It can be directly aimed at one person and the troll would follow that player wherever they go.
+      <br><br>
+      The toxic behavior can also be in game actions such as blocking players paths, stealing people's items, not playing fair, creating a game to then just kick people, causing your own team to lose or creating multiple accounts.
+      <br><br>
+      Some of the "game terms" for this are: trolling, stalking, spamming, greefing, and smurfing.
+    </p>
+
+
+    <div class="section">
+      <h1>SOLUTION</h1>
+      <p>Grouchy helps by giving game developers the tools they need to analyze, manage, and moderate their online communities. It includes a website for developers where they can view chat history and ban players in real time. As well as, website for players
+        to view and appeal their bans.
+        <p>
+    </div>
+
+    <h1>FEATURES</h1>
+    <img src="img/features.png" width="1044" height="169" style="margin: 60px auto 120px auto">
+
+    <div style="background-color: #000; padding:20px 0px; overflow:hidden">
+      <img src="img/colors.png" width="580" height="298" style="margin: 80px auto 120px auto">
+    </div>
+    <div class="ribbon">
+      New Product Design - UX / UI Design <br> Platform: Web, Tablet, Mobile <br> Date: 2017
+    </div>
+
+    <h1>BRANDING</h1>
+    <img src="img/aboutTheLogo.png" width="600" style="margin: 60px auto 120px auto">
+
+
+    <h1>PERSONAS</h1>
+    <img src="img/personas.png" width="480" height="284" style="margin: 60px auto 120px auto">
+
+    <h1>USECASES</h1>
+    <img src="img/usercases.png" width="627" height="330" style="margin: 60px auto 120px auto">
+
+    <h1>USERFLOW</h1>
+    <img src="img/userflow.png" width="581" height="395" style="margin: 60px auto 120px auto">
+
+
+
+    <h1>RESEARCH</h1>
+    <p>
+      After doing a ton of research on what makes toxic behavior I came up with several principles.
+      <br><br>
+      There is a theory that all toxic behavior is caused by toxic players. But it is wrong, toxic players only cause a small subset of bad behavior. Most of it is caused by normal players having a bad day.
+    </p>
+    <div class="video-frame">
+      <video width="800" height="800" autoplay loop>
+        <source src="video/3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <p>
+      One toxic player will cause other players to be toxic back, and then toxic to other players. This behavior spreads. Previously, a nice and normal player becomes mean and disrespectful. This spreads through the community increasing the level of toxicity.
+      This effects the game popularity as people leave and don't want to play any more.
+    </p>
+    <div class="video-frame">
+      <video width="800" height="800" autoplay loop>
+        <source src="video/1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <p>
+      The game developers should provide a well understood and streamlined loop that warns otherwise good players when they are approaching toxic behavior and isolate with bans if behavior turns toxic. These are probably nice and normal people, so the warn and ban cycle needs to go quick and without much drama.
+    </p>
+    <div class="video-frame">
+      <video width="800" height="800" autoplay loop>
+        <source src="video/2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <h1>ARCHITECTURE</chh1>
+    <img src="img/arch.png" width="707" height="844" style="margin: 60px auto 120px auto">
+
+    <h1>IPAD WIREFRAMES</h1>
+
+    <div class="ipad-card">
+      <p>Main admin chat and event view.</p>
+      <div class="ipad-frame">
+        <img src="img/ipad1bw.png" width=1000 height=768>
+      </div>
+    </div>
+
+    <div class="ipad-card">
+      <p>Ban screen.</p>
+      <div class="ipad-frame">
+        <img src="img/ipad2bw.png" width=1000 height=768>
+      </div>
+    </div>
+
+    <div class="ipad-card">
+      <p>Ban screen moves up when typing.</p>
+      <div class="ipad-frame">
+        <img src="img/ipad3bw.png" width=1000 height=768>
+      </div>
+    </div>
+
+    <h1>IPHONE WIREFRAMES</h1>
+
+    <div style="text-align: center">
+      <div class="iphone-card">
+        <p>Filters and Channels</p>
+        <div class="iphone-frame">
+          <img src="img/iphone1bw.png" width=186>
+        </div>
+      </div>
+      <div class="iphone-card">
+        <p>Chats and Events</p>
+        <div class="iphone-frame">
+          <img src="img/iphone2bw.png" width=186>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 120px">
+      <div class="iphone-card">
+        <p>Banning Screen</p>
+        <div class="iphone-frame">
+          <img src="img/iphone3bw.png" width=186>
+        </div>
+      </div>
+      <div class="iphone-card">
+        <p>Ban Message</p>
+        <div class="iphone-frame">
+          <img src="img/iphone4bw.png" width=186>
+        </div>
+      </div>
+    </div>
+
+    <a class="toggle-button" href="grouchy_casestudy.pdf">
+      <div class="inner">
+        CASE STUDY<br> PDF
+      </div>
+    </a>
+    <br>
+    <a class="toggle-button" href="mailto:kate4chian@gmail.com">
+      <div class="inner">
+        CONTACT ME<br> VIA EMAIL
+      </div>
+    </a>
+
+  </div>
+
+
+  <footer>
+    <a class="leftArrow" href="../blueprint/index.html">
+      <img src="../../image/arrowLeft.png" width=29 height=54> Blueprint
+    </a>
+    <a class="rightArrow" href="../steamspy/index.html">
+      <img src="../../image/arrowRight.png" width=29 height=54> Steam Spy
+    </a>
+    KATE VON HOUCK
+    <div class="copy">
+      COPYRIGHT &copy; 2017
+    </div>
+  </footer>
+</body>
+
+</html>

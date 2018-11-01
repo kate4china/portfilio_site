@@ -1,0 +1,384 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Apercu;
+}
+@media screen and (max-width: 400px) {
+  #links {
+    top: 360px !important;
+  }
+  #links a {
+    display: block !important;
+  }
+}
+
+
+@font-face {
+  font-family: "Apercu";
+  src: url(fonts/Apercu-Regular.otf) format("opentype");
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: black;
+  font-family: "Apercu", sans-serif;
+  font-size: 18px;
+}
+
+header {
+  height: 500px;
+  background-color: #000000;
+}
+
+header nav {
+  position: absolute;
+  top: 46px;
+  right: 22px;
+  color: white;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 16px;
+}
+
+header nav a:hover {
+  display: inline-block;
+  color: #D0011B;
+}
+
+header nav .red {
+  padding-left: 11px;
+  padding-right: 11px;
+  color: #D0011B;
+}
+
+header img {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 80%;
+  height: auto;
+}
+
+header.mini {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 76px;
+  z-index: -1;
+  opacity: 0;
+}
+
+header.mini nav {
+  top: 28px;
+}
+
+header.mini img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transform: translate(0px, 0px);
+}
+
+header.page {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 76px;
+  z-index: 10;
+  opacity: 1;
+  margin: 0px;
+}
+
+header.page nav {
+  top: 28px;
+}
+
+header.page img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transform: translate(0px, 0px);
+}
+
+header.area {
+  height: 76px;
+}
+
+#links {
+  position: absolute;
+  top: 460px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, .40);
+  font-size: 20px;
+}
+
+#links a {
+  display: inline-block;
+  margin: 0px 30px;
+  text-decoration: none;
+}
+
+#links a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .25s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  height: 520px;
+  background-color: #D8D8D8;
+}
+
+section {
+  position: relative;
+  display: block;
+  background-color: #FFFFFF;
+  padding: 100px 0px;
+  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%);
+}
+
+section label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #FF0000;
+  font-size: 24px;
+}
+
+section img {
+  display: block;
+  height: 500px;
+  transition: all .5s ease-in-out;
+
+  margin: 0px auto;
+  max-width: 80%;
+  height: auto;
+}
+
+section .hover {
+  opacity: 0;
+  transition: all .725s;
+}
+
+section:hover img {
+  transform: scale(1.1);
+}
+
+section:hover .hover {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, .60);
+  opacity: 1;
+}
+
+section .hover .inner {
+  height: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section .hover .title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+section .hover .sub {
+  font-size: 28px;
+  color: #D0011B;
+  text-align: center;
+}
+
+section.contact {
+  height: 600px;
+  background: black;
+  color: white;
+  padding: 200px 100px;
+}
+
+section.contact h2 {
+  color: #D0011B;
+  margin-bottom: 20px;
+}
+
+section.contact p {
+  display: block;
+
+}
+
+footer {
+  position: relative;
+  height: 100px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  background-color: #000000;
+}
+
+footer .copy {
+  font-size:10px;
+  margin-top: -10px;
+}
+
+#popup h2 {
+  color: red;
+  padding-bottom: 0px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+#popup p {
+  top: 111px;
+  left: 49px;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 30px;
+  max-width: 700px;
+}
+
+#popup {
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100%;
+  height: 500px;
+  background: black;
+  display: none;
+  color: white;
+  padding: 71px 49px;
+}
+
+#popup-x {
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  transform: rotate(0deg);
+  transition: all .25s;
+}
+
+#popup-x:hover {
+  transform: rotate(180deg);
+}
+
+#face {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+button {
+  padding: 12px 36px;
+  background-color: #D0011B;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a.button {
+  padding: 12px 36px;
+  background-color: #D0011B;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.toggle-button {
+  display: block;
+  margin: 0px auto;
+  width: 300px;
+  height: 60px;
+  background-color: #000000;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  overflow: hidden;
+  transition: background-color .5s;
+}
+
+.toggle-button .inner {
+  position: relative;
+  top: 0px;
+  transition: top .5s;
+}
+
+.toggle-button:hover {
+  background-color: #D0011B;
+}
+
+.toggle-button:hover .inner {
+  position: relative;
+  top: -60px;
+}
+
+footer {
+  z-index: 9;
+}
+
+#overlayer {
+  padding-bottom: 200px;
+}
+
+.leftArrow {
+  position: absolute;
+  bottom: 200px;
+  left: 30px;
+  color: black;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.leftArrow img {
+  position: absolute;
+  top: -16px;
+  left: 0px;
+  transition: left .25s;
+}
+.leftArrow:hover img {
+  left: -10px;
+}
+
+.rightArrow {
+  position: absolute;
+  bottom: 200px;
+  right: 30px;
+  color: black;
+  padding-right: 30px;
+  font-size: 20px;
+}
+.rightArrow img {
+  position: absolute;
+  top: -16px;
+  right: 0px;
+  transition: right .25s;
+}
+.rightArrow:hover img {
+  right: -10px;
+}

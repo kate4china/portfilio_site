@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bubbleat Game Design by Kate von Houck</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width">
+  <link href='../../style.css' rel='stylesheet' type='text/css'>
+  <style>
+    @media screen and (max-width: 570px) {
+      #headerimage {
+        height: 300px !important;
+      }
+      #overlayer {
+        margin-top: 370px !important;
+      }
+      #video iframe {
+        max-width: 90% !important;
+      }
+      .video-card {
+        margin: 60px 0px !important;
+      }
+
+      .video-frame {
+        padding: 20px 0px !important;
+      }
+
+      .video-card {
+        margin: 30px 0px !important;;
+      }
+
+      video {
+        width: 90% !important;
+      }
+
+    }
+
+    .redtx {
+      color: #D0011B;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: white;
+      line-height: 28px;
+    }
+
+    #headerimage {
+      position: fixed;
+      top: 76px;
+      z-index: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      background: linear-gradient(to bottom, #FFFFFF 0%, #60e9ff 100%);
+      height: 632px;
+    }
+
+    #headerimage img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #overlayer {
+      padding-top: 1px;
+      margin-top: 700px;
+      position: relative;
+      background-color: white;
+      z-index: 1;
+    }
+
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 80%;
+      height: auto;
+    }
+
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 38px;
+      font-size: 28px;
+      font-weight: normal;
+      text-align: center;
+      color: #7C024B;
+    }
+
+    p {
+      padding: 0px 20px;
+      max-width: 600px;
+      margin: 0px auto;
+    }
+
+    .section {
+      width: 100%;
+      margin: 0px auto;
+    }
+
+    .ribbon {
+      padding: 20px 0px;
+      color: white;
+      text-align: center;
+      background-color: #439422;
+    }
+
+    .colors {
+      background-color: #333333;
+      padding: 20px 0px;
+      overflow: hidden;
+    }
+
+    .video-frame {
+      padding: 20px 20px;
+      margin-top: 0px;
+    }
+
+    .video-card {
+      display: inline-block;
+      margin: 30px 30px;
+    }
+
+    #video {
+      background: black;
+      padding: 50px 0px;
+    }
+
+    #video iframe {
+      display: block;
+      margin: 0px auto;
+      max-width: 640px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="page">
+    <nav>
+      <a href="../../index.html#projects">PROJECTS</a>
+      <span class="red">/</span>
+      <a href="../../index.html#contact">CONTACT</a>
+    </nav>
+    <a href="../../index.html">
+      <img src="../../image/logomini.png" with="46" height="46">
+    </a>
+  </header>
+
+  <div id="headerimage">
+    <img src="../../image/bubbleat.png" width="1200" height="600">
+  </div>
+
+
+  <div id="overlayer">
+
+    <div class="section">
+      <h1>Bubbleats</h1>
+      <p>
+        Bubbleats is a retro game that runs on the Raspberry Pi. It was programed using python with help of the pygame library. Bubbleats is a very fun game where you eat pills falling from the sky and can push your opponent to get at the pills. This game is designed in retro style and it has five levels. The game features eating sounds which I created myself.
+      </p>
+    </div>
+
+    <div style="text-align: center; margin-top: 100px;">
+      <div class="video-card">
+        Run, jump and eat pills.
+        <div class="video-frame">
+          <video width="490" height="320" autoplay loop>
+            <source src="video/1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-card">
+        Eat 10 more pills to win!
+        <div class="video-frame">
+          <video width="490" height="320" autoplay loop>
+            <source src="video/2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <div class="video-card">
+        Ice pills make you freeze.
+        <div class="video-frame">
+          <video width="490" height="320" autoplay loop>
+            <source src="video/3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="video-card">
+        Push the other player around!
+        <div class="video-frame">
+          <video width="490" height="320" autoplay loop>
+            <source src="video/4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <div class="video-card">
+        Red pills make you faster, go go go!
+        <div class="video-frame">
+          <video width="490" height="320" autoplay loop>
+            <source src="video/5.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="video-card">
+        No one wants Blue pills, they make you slower!
+        <div class="video-frame">
+          <video width="490" height="320" autoplay loop>
+            <source src="video/6.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h1>GOALS</h1>
+    <p>
+      The main mission of this project is to create a retro game console with raspberry pi.
+      This console will play my own 2D game made in retro style with the pygame library for exactly two players.
+      The goal of the game is to get more points then the other player by eating more pills.
+    </p>
+
+    <h1>FEATURES</h1>
+    <img src="img/features.png" width="1044" height="169" style="margin: 60px auto 120px auto">
+
+    <div style="background-color: #000; padding:20px 0px; overflow:hidden">
+      <img src="img/colors.png" width="1043" height="458" style="margin: 80px auto 120px auto">
+    </div>
+    <div class="ribbon" style='margin-bottom: 100px'>
+      New Product Design - UX / UI Design <br>
+      Platform: IOT Project for TV Screen  <br>
+      Date: 2017
+    </div>
+
+    <h1>TARTGET MARKET</h1>
+    <p>
+      My target audience are the players (10-35 years old) who would like to play games with a retro console. And who are interested in playing a fun game with raspberry pi.
+    </p>
+
+    <h1>RULES</h1>
+    <p>
+      Bubbleats has very simple and easy game. The player should eat more pills to gain more points but some pills can slow down or freeze the character like ice and blue ones. The pink pills make the character move faster and the yellow pills have no effect.
+      <br><br>
+      The player needs to eat more pink pills at start, and try to have the other player eat blue pills.
+      If the player is close to winning then eating blue pills becomes a good idea.
+      Player needs to push the other player, and stay close to them in order to have more map control.
+      Player needs to momentary give up map control in order to grab better pills.
+    </p>
+    <img src="img/rules.png" width="814" height="543" style="margin: 60px auto 120px auto">
+
+    <h1>DESIGN OF THE GAME</h1>
+    <img src="img/design.png" width="459" height="1033" style="margin: 60px auto 120px auto">
+
+    <h1>PROGRAMMING</h1>
+    <p>
+      I chose python + pygame to built Bubbleats game, because it was already installed and seemed like the way to go to make games for Raspberry PI.
+      <br><br>
+      At first I choose 320x240 resolution, because it seemed like a good retro resolution. The problem came from scaling. At first I just used simple full screen mode in pygame. But it does not seem to do full screen mode "well", just puts a small game in the middle of the screen. I found some code online on how to scale game up to higher resolutions. The code worked but was very slow. Then I scaled the game to 640x480 resolution, hoping that I would not need to scale it. But it still was really slow. I spend a lot of time trying to figure out slow scaling issues. The game also ran really slow on my Mac, but it would run super fast when I would hook up an external monitor. Turns out that there is a bug in pygame that makes it really slow on high DPI screen that my mac laptop has. Most of the game slowness comes from one line: "pygame.display.flip()" I spent as much time trying to figure out the slowness and the scaling as I did on the actual game. I decided to go with the "bad" pygame full screen, because its the only way to run the game fast on raspberry pi.
+      <br><br>
+      Even of the scaling issues and slowness game came out fun
+with many interesting strategies.
+    </p>
+
+
+    <h1>BILL OF MATERIAL</h1>
+    <div style="padding:50px 0px; background-color: #FAFAFA;">
+      <div style="width:600px; margin: 0px auto">
+        <span class="redtx">device</span>: raspbarry pi<br>
+        <span class="redtx">os</span>: raspbian<br>
+        <span class="redtx">programming langauge</span>: python<br>
+        <span class="redtx">engine/library</span>: pygame <a href="http://www.pygame.org">www.pygame.org</a><br>
+        <span class="redtx">controlers</span>: NES clasical USB like <a href="http://www.amazon.com/Retro-Link-Wired-NES-Style-USB-Controller/dp/B00GWKL3Y4">www.amazon.com/Retro-Link-Wired-NES-Style-USB-Controller/dp/B00GWKL3Y4</a><br>
+        <span class="redtx">art assets</span>: Sketch<br>
+        <span class="redtx">sounds</span>: CC freesound.org <a href="http://www.freesound.org">www.freesound.org</a><br>
+        <span class="redtx">music</span>: CC free to use music<br>
+      </div>
+    </div>
+
+    <h1>USECASES</h1>
+    <img src="img/usercase.png" width="800" height="1000" style="margin: 60px auto 60px auto">
+
+    <h1>HIGH LEVEL SYSTEM DIAGRAM</h1>
+    <img src="img/highSys.png" width="592" height="135" style="margin: 60px auto 120px auto">
+
+    <h1>LOW LEVEL SYSTEM DIAGRAM</h1>
+    <img src="img/lowSys.png" width="619" height="234" style="margin: 60px auto 120px auto">
+
+    <a class="toggle-button" href="https://github.com/kate4china/Bubbleats">
+      <div class="inner">
+        VIEW SOURCE<br> GITHUB
+      </div>
+    </a>
+    <br>
+    <a class="toggle-button" href="mailto:kate4chian@gmail.com">
+      <div class="inner">
+        CONTACT ME<br> VIA EMAIL
+      </div>
+    </a>
+  </div>
+
+
+  <footer>
+    <a class="leftArrow" href="../prodance/index.html">
+      <img src="../../image/arrowLeft.png" width=29 height=54> ProDance
+    </a>
+    <a class="rightArrow" href="../breakpoint/index.html">
+      <img src="../../image/arrowRight.png" width=29 height=54> Breakpoint
+    </a>
+    KATE VON HOUCK
+    <div class="copy">
+      COPYRIGHT &copy; 2017
+    </div>
+  </footer>
+</body>
+
+</html>
