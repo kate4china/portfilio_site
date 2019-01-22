@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+      font-family: "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .header {
+      height: 75px;
+      border-top: 5px solid #CE0B24;
+      border-bottom: 1px solid #C4C4C4;
+    }
+
+    .inner {
+      width: 1008px;
+      margin: 0px auto;
+    }
+
+    .header .links {
+      display: block;
+      float: right;
+      padding: 24px 29px 0px 10px;
+    }
+
+    .header .links a {
+      display: inline-block;
+      color: #7C7C7C;
+      text-decoration: none;
+      margin-left: 13px;
+    }
+
+    .header .links a:hover {
+      display: inline-block;
+      color: #3B3A3A;
+      text-decoration: none;
+      margin-left: 13px;
+    }
+
+    .logo {
+      position: relative;
+      top: 14px;
+      left: 4px;
+    }
+
+    .aboutBlock {
+      padding: 64px 0px 0px 8px;
+      height: 262px;
+    }
+
+    .aboutBlock h1 {
+      color: #CE0B24;
+      font-size: 40px;
+      margin-bottom: 4px;
+    }
+
+    .aboutBlock h2 {
+      color: #333333;
+      font-size: 40px;
+      margin-bottom: 7px;
+    }
+
+    .aboutBlock p {
+      color: #6E6C6C;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .hitMeUp {
+      text-align: center;
+      padding: 71px 0px 0px 8px;
+      height: 262px;
+    }
+    .hitMeUp h1 {
+      color: #CE0B24;
+      font-size: 36px;
+      margin-bottom: 23px;
+    }
+
+    .hitMeUp p {
+      color: #6E6C6C;
+      font-size: 18px;
+      margin-bottom: 1px;
+    }
+
+    .hitMeUp a {
+      display: inline-block;
+      color: #6E6C6C;
+      font-size: 18px;
+      text-decoration: none;
+      border: 2px solid #CE0B24;
+      padding: 10px 55px;
+      border-radius: 200px;
+      margin-top: 33px;
+    }
+
+    .footer {
+      height: 35px;
+      margin-top: 134px;
+      text-align: center;
+      color: #B1B1B1;
+      font-size: 14px;
+      border-bottom: 5px solid #CE0B24;
+    }
+
+    .grid {
+      width: 1008px;
+      margin: 0px auto;
+      overflow: hidden;
+    }
+
+    .gridbox {
+      position: relative;
+      float: left;
+      width: 320px;
+      height: 344px;
+      background-color: #F1F0F0;
+      margin: 4px;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .gridbox img {
+      width: 100%;
+      height: 100%;
+      transition: all .725s;
+    }
+
+    .gridbox .hover {
+      opacity: 0;
+      transition: all .725s;
+      background: rgba(0, 0, 0, .60);
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+    }
+
+    .gridbox:hover img {
+      transform: scale(1.1);
+    }
+
+    .gridbox a:hover .hover {
+      opacity: 1;
+    }
+
+    .gridbox .hover .inner {
+      height: 80px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .gridbox .hover .title {
+      font-size: 36px;
+      color: white;
+      text-align: center;
+    }
+
+    .gridbox .hover .sub {
+      font-size: 28px;
+      color: #D0011B;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .grid {
+        width: 710px;
+      }
+
+      .gridbox {
+        width: 220px;
+        height: 244px;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .grid {
+        width: 474px;
+      }
+
+      .gridbox {
+        width: 220px;
+        height: 244px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .grid {
+        width: 340px;
+      }
+
+      .gridbox {
+        width: 320px;
+        height: 344px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="inner">
+      <img class="logo" src="image/home/redLogo.png" alt="blueprint" width="40" height="40">
+      <div class="links">
+        <a href="#">linkedin</a>
+        <a href="#">resume</a>
+        <a href="#">about</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="aboutBlock">
+    <div class="inner">
+      <h1>I'm Kate von Houck</h1>
+      <h2>UX/UI designer</h2>
+      <p>I’m focusing on desktop, mobile, and gaming.</p>
+      <p>I enjoy making user-centric fluid interfaces.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <div class="gridbox">
+      <a href="projects/blueprint/index.html">
+        <img src="image/home/blueprint.png" alt="blueprint" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/gravitational/index.html">
+        <img src="image/home/gravitational.png" alt="gravitational" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/waterpark/index.html">
+        <img src="image/home/waterpark.png" alt="waterpark" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/grouchy/index.html">
+        <img src="image/home/grouchy.png" alt="grouchy" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/bubbleat/index.html">
+        <img src="image/home/bubbleEats.png" alt="bubbleEats" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/todoapp/index.html">
+        <img src="image/home/todoapp.png" alt="todoapp" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="gridbox">
+      <a href="projects/steamspy/index.html">
+        <img src="image/home/steamspy.png" alt="steamspy" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/prodance/index.html">
+        <img src="image/home/prodance.png" alt="prodance" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="gridbox">
+      <a href="projects/breakpoint/index.html">
+        <img src="image/home/breakpoint.png" alt="breakpoint" width="320" height="344">
+                <div class="hover">
+          <div class="inner">
+            <div class="title">BLUEPRINT</div>
+            <div class="sub">UX/UI DESIGN</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="hitMeUp">
+    <div class="inner">
+      <h1>Hit me up</h1>
+      <p>Thank you for taking a look at my work and</p>
+      <p>learning about me. Feel free to say hi.</p>
+      <a href="#">
+        SAY HELLO
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    Copyright 2019 Kate von Houck. All Rights Researved
+  </div>
+
+</body>
+
+</html>
