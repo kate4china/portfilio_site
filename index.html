@@ -2,51 +2,8 @@
 <html>
 
 <head>
+  <link rel="stylesheet" type="text/css" href="common.css">
   <style>
-    * {
-      box-sizing: border-box;
-      padding: 0px;
-      margin: 0px;
-      font-family: "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
-    .header {
-      height: 75px;
-      border-top: 5px solid #CE0B24;
-      border-bottom: 1px solid #C4C4C4;
-    }
-
-    .inner {
-      width: 1008px;
-      margin: 0px auto;
-    }
-
-    .header .links {
-      display: block;
-      float: right;
-      padding: 24px 29px 0px 10px;
-    }
-
-    .header .links a {
-      display: inline-block;
-      color: #7C7C7C;
-      text-decoration: none;
-      margin-left: 13px;
-    }
-
-    .header .links a:hover {
-      display: inline-block;
-      color: #3B3A3A;
-      text-decoration: none;
-      margin-left: 13px;
-    }
-
-    .logo {
-      position: relative;
-      top: 14px;
-      left: 4px;
-    }
-
     .aboutBlock {
       padding: 64px 0px 0px 8px;
       height: 262px;
@@ -65,7 +22,7 @@
     }
 
     .aboutBlock p {
-      color: #6E6C6C;
+      color: #989898;
       font-size: 18px;
       margin-bottom: 4px;
     }
@@ -169,6 +126,29 @@
       text-align: center;
     }
 
+    .bio {
+      text-align: center;
+      max-width: 600px;
+      margin: 0px auto;
+    }
+
+    .bio h1 {
+      margin: 140px 0px 10px 0px;
+      color: #CE0B24;
+      font-size: 36px;
+      margin-bottom: 23px;
+    }
+
+    .bio img {
+      margin: 10px 0px;
+    }
+
+    .bio p {
+      margin: 10px 0px;
+      color: #6E6C6C;
+      font-size: 18px;
+    }
+
     @media only screen and (max-width: 1000px) {
       .grid {
         width: 710px;
@@ -207,7 +187,9 @@
 <body>
   <div class="header">
     <div class="inner">
-      <img class="logo" src="image/home/redLogo.png" alt="blueprint" width="40" height="40">
+      <a href="index.html">
+        <img class="logo" src="image/home/redLogo.png" alt="home" width="40" height="40">
+      </a>
       <div class="links">
         <a href="https://www.linkedin.com/in/kate-von-houck-aa966466/" target="_blank">linkedin</a>
         <a href="http://kate.vonhouck.com/Kate%20von%20Houck%20Resume.pdf">resume</a>
@@ -334,6 +316,16 @@
         </div>
       </a>
     </div>
+  </div>
+
+  <div class="bio">
+    <h1>About</h1>
+    <img src="image/home/kate.png">
+    <p>Hey, Kate here. I am a UX/UI designer. Experienced working in the
+      software industry. I’m passionate about research, user testing, and
+      user-centric design for websites and mobile apps. I like to focus on
+      making great looking and fluid interfaces that feel natural and obvious
+      to use.</p>
   </div>
 
   <div class="hitMeUp">
