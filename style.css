@@ -343,10 +343,6 @@ footer {
   z-index: 9;
 }
 
-#overlayer {
-  padding-bottom: 200px;
-}
-
 .leftArrow {
   position: absolute;
   bottom: 200px;
