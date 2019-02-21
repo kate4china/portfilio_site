@@ -52,3 +52,23 @@
 .header .logo:hover {
   opacity: 0.60;
 }
+
+a.redButton {
+  display: inline-block;
+  color: #6E6C6C;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid #CE0B24;
+  padding: 10px 0px;
+  width: 200px;
+  border-radius: 200px;
+  margin-top: 33px;
+  transition: all 500ms;
+  text-align: center;
+}
+
+a.redButton:hover {
+  background: #CE0B24;
+  color: white;
+  text-decoration: none;
+}
