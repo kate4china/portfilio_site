@@ -72,3 +72,12 @@ a.redButton:hover {
   color: white;
   text-decoration: none;
 }
+
+.footer {
+  height: 35px;
+  margin-top: 134px;
+  text-align: center;
+  color: #B1B1B1;
+  font-size: 14px;
+  border-bottom: 5px solid #CE0B24;
+}
