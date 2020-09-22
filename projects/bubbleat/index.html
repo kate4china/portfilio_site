@@ -160,8 +160,8 @@
     <div class="section">
       <h1>Bubbleats</h1>
       <p>
-        Bubbleats is a retro game that runs on the Raspberry Pi. It was programed using python with help of the pygame library. Bubbleats is a very fun game where you eat pills falling from the sky and can push your opponent to get at the pills. This game is designed in retro style and it has five levels. The game features eating sounds which I created myself.
-        <br><br>Monofuel, the game developer got intersted in my game and asked my permission to rewrite the code in Nim language and made the game much faster. Here is <a href="https://github.com/monofuel/Bubbleats">the link</a>
+        Bubbleats is a retro game that runs on the Raspberry Pi. It was programmed using python with help of the pygame library. Bubbleats is a very fun game where you eat pills falling from the sky and can push your opponent to get at the pills. This game is designed in retro style and it has five levels. The game features eating sounds which I created myself.
+        <br><br>Monofuel, the game developer got interested in my game and asked my permission to rewrite the code in Nim language and made the game much faster. Here is <a href="https://github.com/monofuel/Bubbleats">the link</a>
       </p>
 
     </div>
@@ -224,9 +224,9 @@
 
     <h1>GOALS</h1>
     <p>
-      The main mission of this project is to create a retro game console with raspberry pi.
-      This console will play my own 2D game made in retro style with the pygame library for exactly two players.
-      The goal of the game is to get more points then the other player by eating more pills.
+      The main mission of this project is to create a retro game console with Raspberry Pi. 
+      This console will play my own 2D game made in retro style with the pygame library for exactly two players. 
+      The goal of the game is to get more points than the other player by eating more pills.
     </p>
 
     <h1>FEATURES</h1>
@@ -243,7 +243,7 @@
 
     <h1>TARTGET MARKET</h1>
     <p>
-      My target audience are the players (10-35 years old) who would like to play games with a retro console. And who are interested in playing a fun game with raspberry pi.
+      My target audience are the players (10-35 years old) who would like to play games with a retro console. And who are interested in playing a fun game with Raspberry Pi.
     </p>
 
     <h1>RULES</h1>
@@ -262,12 +262,11 @@
 
     <h1>PROGRAMMING</h1>
     <p>
-      I chose python + pygame to built Bubbleats game, because it was already installed and seemed like the way to go to make games for Raspberry PI.
+      I chose python + pygame to built Bubbleats game, because it was already installed and seemed like the way to go to make games for Raspberry Pi.
       <br><br>
-      At first I choose 320x240 resolution, because it seemed like a good retro resolution. The problem came from scaling. At first I just used simple full screen mode in pygame. But it does not seem to do full screen mode "well", just puts a small game in the middle of the screen. I found some code online on how to scale game up to higher resolutions. The code worked but was very slow. Then I scaled the game to 640x480 resolution, hoping that I would not need to scale it. But it still was really slow. I spend a lot of time trying to figure out slow scaling issues. The game also ran really slow on my Mac, but it would run super fast when I would hook up an external monitor. Turns out that there is a bug in pygame that makes it really slow on high DPI screen that my mac laptop has. Most of the game slowness comes from one line: "pygame.display.flip()" I spent as much time trying to figure out the slowness and the scaling as I did on the actual game. I decided to go with the "bad" pygame full screen, because its the only way to run the game fast on raspberry pi.
+      At first, I choose 320×240 resolution, because it seemed like a good retro resolution. The problem came from scaling. I just used simple full screen mode in pygame. But it does not seem to do full screen mode "well", just puts a small game in the middle of the screen. I found some code online on how to scale the game up to higher resolutions. The code worked but was very slow. Then I scaled the game to 640×480 resolution, hoping that I would not need to scale it. But it still was really slow. I spend a lot of time trying to figure out slow scaling issues. The game also ran really slow on my Mac, but it would run super fast when I would hook up an external monitor. Turns out that there is a bug in pygame that makes it really slow on high DPI screen that my mac laptop has. Most of the game slowness comes from one line: "pygame.display.flip()" I spent as much time trying to figure out the slowness and the scaling as I did on the actual game. I decided to go with the "bad" pygame full screen, because it's the only way to run the game fast on Raspberry Pi.
       <br><br>
-      Even of the scaling issues and slowness game came out fun
-with many interesting strategies.
+      Even of the scaling issues and slowness, the game came out fun with many interesting strategies.
     </p>
 
 
